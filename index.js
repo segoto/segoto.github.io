@@ -48,11 +48,11 @@ function typeWriterEffect() {
             clearInterval(typeTimer2);
             listItems[i].innerHTML = str2;
             n2 = 0;
-            setInterval(function () {
+            let timer2= setInterval(function () {
               if (n2 === 0) {
-                if (i === 3) listItems[i].innerHTML = str2 + "|";
-                else listItems[i].innerHTML = str2;
+                listItems[i].innerHTML = str2;
                 n2 = 1;
+                clearInterval(timer2);
               } else {
                 listItems[i].innerHTML = str2;
                 n2 = 0;
@@ -64,10 +64,34 @@ function typeWriterEffect() {
     }
   }, 3675);
 }
-function appearCallToAction(){
-    setTimeout(function(){
-        document.getElementsByClassName('call-to-action')[0].style.display="block";
-    },7500);
+function appearCallToAction() {
+  setTimeout(function () {
+    setTimeout(function () {
+      let callToAction = document.getElementsByClassName("call-to-action")[0];
+      callToAction.innerHTML = "";
+      let n = 0;
+      let str = "If you want to know me better keep scrolling!";
+      let typeTimer = setInterval(function () {
+        n = n + 1;
+        callToAction.innerHTML = str.slice(0, n);
+        if (n === str.length) {
+          clearInterval(typeTimer);
+          callToAction.innerHTML = str;
+          n = 0;
+          let timer = setInterval(function () {
+            if (n === 0) {
+              callToAction.innerHTML = str;
+              n = 1;
+              
+            } else {
+              callToAction.innerHTML = str;
+              n = 0;
+            }
+          }, 500);
+        }
+      }, 60);
+    }, 2000);
+  }, 6500);
 }
 appearCallToAction();
 typeWriterEffect();

@@ -23,7 +23,7 @@ main{
         
     }
 }
-@keyframes slide-in-down{
+/* @keyframes slide-in-down{
     from{
         margin-top:100%;
         
@@ -32,7 +32,7 @@ main{
         margin-top: 6%;
         
     }
-}
+} */
 #text{
     text-align: center;
 }
@@ -47,7 +47,7 @@ main{
     }
     .call-to-action{
         text-align:center;
-        display:none;
+        
     }
 }
 @media screen and (min-width:850px){
@@ -55,8 +55,8 @@ main{
         margin-top:6%;
         text-align:center;
         position:relative;
-        animation-duration: 2s;
-        animation-name: slide-in-down;
-        display:none;
+        /* animation-duration: 2s;
+        animation-name: slide-in-down; */
+        
     }
 }
