@@ -38,7 +38,7 @@ main {
   padding: 5px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) {
   .margin-small {
     margin-top: 20px;
   }
@@ -58,7 +58,7 @@ main {
     width: 60%;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 992px) {
   .call-to-action {
     margin-top: 6%;
     text-align: center;
