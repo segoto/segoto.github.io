@@ -2,9 +2,26 @@ const descriptions = [
   "Software developer",
   "Guitar and bass player",
   "Competitive programmer",
-  "Football lover",
+  "Soccer lover",
 ];
-
+const photosWidths=[
+    60,
+    100,
+    80,
+    80,
+    80,
+    35,
+    44,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    35,
+    57,
+    80,
+]
 const timeOuts = [0, 1200, 2600, 4000];
 function typeWriterEffect() {
   setTimeout(function () {
@@ -48,7 +65,7 @@ function typeWriterEffect() {
             clearInterval(typeTimer2);
             listItems[i].innerHTML = str2;
             n2 = 0;
-            let timer2= setInterval(function () {
+            let timer2 = setInterval(function () {
               if (n2 === 0) {
                 listItems[i].innerHTML = str2;
                 n2 = 1;
@@ -64,34 +81,18 @@ function typeWriterEffect() {
     }
   }, 3675);
 }
-function appearCallToAction() {
-  setTimeout(function () {
-    setTimeout(function () {
-      let callToAction = document.getElementsByClassName("call-to-action")[0];
-      callToAction.innerHTML = "";
-      let n = 0;
-      let str = "If you want to know me better keep scrolling!";
-      let typeTimer = setInterval(function () {
-        n = n + 1;
-        callToAction.innerHTML = str.slice(0, n);
-        if (n === str.length) {
-          clearInterval(typeTimer);
-          callToAction.innerHTML = str;
-          n = 0;
-          let timer = setInterval(function () {
-            if (n === 0) {
-              callToAction.innerHTML = str;
-              n = 1;
-              
-            } else {
-              callToAction.innerHTML = str;
-              n = 0;
-            }
-          }, 500);
-        }
-      }, 60);
-    }, 2000);
-  }, 6500);
+function photoChange() {
+  let i = 0;
+  setInterval(function () {
+    let pic = document
+    .getElementById("my-pictures");
+
+    pic.setAttribute("width", ""+photosWidths[(i % 16)]+"%");
+    pic.setAttribute("src", "./images/" + (i % 16) + ".jpg");
+    
+    ++i;
+  },2000);
 }
-appearCallToAction();
+photoChange();
 typeWriterEffect();
+

@@ -1,62 +1,117 @@
-.profile-picture{
-    width:50%;
-    border-radius: 50%;
-    position:relative;
-    animation-duration: 2s;
-    animation-name: slide-in-left;
+.profile-picture {
+  width: 50%;
+  border-radius: 50%;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: slide-in-left;
 }
-main{
-    margin-top: 5%;
+main {
+  margin-top: 5%;
 }
-#descriptions{
-    list-style-type: none;
-    text-align:center;
-    padding:0;
+#descriptions {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
-@keyframes slide-in-left{
-    from{
-        margin-right:200%;
-        
-    }
-    to{
-        margin-right: 0%;
-        
-    }
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-/* @keyframes slide-in-down{
-    from{
-        margin-top:100%;
-        
-    }
-    to{
-        margin-top: 6%;
-        
-    }
-} */
-#text{
+@keyframes slide-in-down {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 6%;
+  }
+}
+#text {
+  text-align: center;
+}
+
+#descriptions > li {
+  padding: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .margin-small {
+    margin-top: 20px;
+  }
+  .call-to-action {
     text-align: center;
+  }
+  .section-spacing {
+    margin-top: 3%;
+    text-align: center;
+  }
+  .experience-logo {
+    width: 20%;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .hobbies {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .call-to-action {
+    margin-top: 6%;
+    text-align: center;
+    position: relative;
+  }
+  .section-spacing {
+    margin-top: 10%;
+  }
+  .experience-logo {
+    width: 100%;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .experience-margin {
+    margin-top: 2%;
+  }
+  .hobbies {
+    width: 60%;
+  }
+}
+.about-me-picture {
+  text-align: center;
+}
+.picture-container {
+  text-align: center;
+  align-content: center;
+}
+.about-me-container {
+  text-align: justify;
 }
 
-#descriptions>li{
-    padding: 5px
+body[data-aos-delay="7500"] [data-aos],
+[data-aos][data-aos][data-aos-delay="7500"] {
+  transition-delay: 7500ms;
 }
-
-@media screen and (max-width:850px){
-    .margin-small{
-        margin-top:20px;
-    }
-    .call-to-action{
-        text-align:center;
-        
-    }
+li {
+  list-style-type: none;
 }
-@media screen and (min-width:850px){
-    .call-to-action{
-        margin-top:6%;
-        text-align:center;
-        position:relative;
-        /* animation-duration: 2s;
-        animation-name: slide-in-down; */
-        
-    }
+ul {
+  padding: 0;
+}
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
