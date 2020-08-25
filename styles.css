@@ -4,6 +4,7 @@
   position: relative;
   animation-duration: 2s;
   animation-name: slide-in-left;
+  max-height: 50vh;
 }
 main {
   margin-top: 5%;
@@ -89,9 +90,9 @@ main {
   text-align: justify;
 }
 
-body[data-aos-delay="7500"] [data-aos],
-[data-aos][data-aos][data-aos-delay="7500"] {
-  transition-delay: 7500ms;
+body[data-aos-delay="7200"] [data-aos],
+[data-aos][data-aos][data-aos-delay="7200"] {
+  transition-delay: 7200ms;
 }
 li {
   list-style-type: none;
