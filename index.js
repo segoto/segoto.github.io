@@ -2,7 +2,7 @@ const descriptions = [
   "Software developer",
   "Guitar and bass player",
   "Competitive programmer",
-  "Football lover",
+  "Soccer lover",
 ];
 const photosWidths=[
     60,

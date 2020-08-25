@@ -53,6 +53,9 @@ main {
     border-radius: 50%;
     text-align: center;
   }
+  .hobbies {
+    width: 60%;
+  }
 }
 @media screen and (min-width: 850px) {
   .call-to-action {
@@ -68,8 +71,11 @@ main {
     border-radius: 50%;
     text-align: center;
   }
-  .experience-margin{
-      margin-top:2%;
+  .experience-margin {
+    margin-top: 2%;
+  }
+  .hobbies {
+    width: 60%;
   }
 }
 .about-me-picture {
@@ -83,13 +89,29 @@ main {
   text-align: justify;
 }
 
-body[data-aos-delay="8500"] [data-aos],
-[data-aos][data-aos][data-aos-delay="8500"] {
-  transition-delay: 8500ms;
+body[data-aos-delay="7500"] [data-aos],
+[data-aos][data-aos][data-aos-delay="7500"] {
+  transition-delay: 7500ms;
 }
 li {
   list-style-type: none;
 }
 ul {
   padding: 0;
+}
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
