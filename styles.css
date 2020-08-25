@@ -1,62 +1,93 @@
-.profile-picture{
-    width:50%;
-    border-radius: 50%;
-    position:relative;
-    animation-duration: 2s;
-    animation-name: slide-in-left;
+.profile-picture {
+  width: 50%;
+  border-radius: 50%;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: slide-in-left;
 }
-main{
-    margin-top: 5%;
+main {
+  margin-top: 5%;
 }
-#descriptions{
-    list-style-type: none;
-    text-align:center;
-    padding:0;
+#descriptions {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
-@keyframes slide-in-left{
-    from{
-        margin-right:200%;
-        
-    }
-    to{
-        margin-right: 0%;
-        
-    }
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@keyframes slide-in-down{
-    from{
-        margin-top:100%;
-        
-    }
-    to{
-        margin-top: 6%;
-        
-    }
+@keyframes slide-in-down {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 6%;
+  }
 }
-#text{
+#text {
+  text-align: center;
+}
+
+#descriptions > li {
+  padding: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .margin-small {
+    margin-top: 20px;
+  }
+  .call-to-action {
     text-align: center;
+  }
+  .section-spacing {
+    margin-top: 3%;
+    text-align: center;
+  }
+  .experience-logo {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .display-experience {
+    display:block;
+}
+}
+@media screen and (min-width: 850px) {
+  .call-to-action {
+    margin-top: 6%;
+    text-align: center;
+    position: relative;
+  }
+  .section-spacing {
+    margin-top: 10%;
+  }
+  .experience-logo {
+    width: 8%;
+    border-radius: 50%;
+  }
+}
+.about-me-picture {
+  text-align: center;
+}
+.picture-container {
+  text-align: center;
+  align-content: center;
+}
+.about-me-container {
+  text-align: justify;
 }
 
-#descriptions>li{
-    padding: 5px
+body[data-aos-delay="8500"] [data-aos],
+[data-aos][data-aos][data-aos-delay="8500"] {
+  transition-delay: 8500ms;
 }
-
-@media screen and (max-width:850px){
-    .margin-small{
-        margin-top:20px;
-    }
-    .call-to-action{
-        text-align:center;
-        display:none;
-    }
+li {
+  list-style-type: none;
 }
-@media screen and (min-width:850px){
-    .call-to-action{
-        margin-top:6%;
-        text-align:center;
-        position:relative;
-        animation-duration: 2s;
-        animation-name: slide-in-down;
-        display:none;
-    }
+ul {
+  padding: 0;
 }

@@ -9,7 +9,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Sebastian Gomez</title>
     <script src="index.js" async></script>
   </head>
@@ -32,29 +38,37 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="#about-me">About me</a>
+              </li>
+              <li>
+                <a href="#experience" class="nav-link">Experience</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Academic</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Hobbies</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a href="#education" class="nav-link">Academic</a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
       <main>
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-lg-6">
-            <div class="row justify-content-center ">
-              <img src="/images/linked.jpg" class="profile-picture" alt="profile picture">
+        <section>
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-6">
+              <div class="row justify-content-center">
+                <img
+                  src="/images/linked.jpg"
+                  class="profile-picture"
+                  alt="profile picture"
+                />
+              </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-lg-6 margin-small">
+            <div class="col-sm-12 col-lg-6 margin-small">
               <h2 id="text"></h2>
               <ul id="descriptions">
                 <li></li>
@@ -62,12 +76,147 @@
                 <li></li>
                 <li></li>
               </ul>
+            </div>
           </div>
+          <div
+            class="row justify-content-center call-to-action"
+            data-aos="fade-up"
+            data-aos-delay="8500"
+          >
+            <h3>If you want to know me better keep scrolling!</h3>
+          </div>
+        </section>
+        <section id="about-me">
+          <div
+            class="row justify-content-center align-items-center section-spacing"
+          >
+            <div
+              class="col-sm-12 col-lg-6 about-me-container"
+              data-aos="fade-left"
+            >
+              <h3>Who am I?</h3>
+              <p>
+                I'm a Systems and Computing Engineering student who also started
+                studying Economy and Mathematics, eventhough I will only pursue
+                the Systems and Computing Engineering degree. Additionally, I'm
+                music lover who learned to play few instruments such as guitar,
+                bass and a little bit of piano. The people who know me may tell
+                you that I love to hangout and talk with my friends, play soccer
+                and also that I'm a person who loves to be part of competitive
+                programming contests.
+              </p>
+              <p>
+                Some random facts you may also should know about me are
+                basically that I'm really fan of Club Independiente Santa Fe,
+                Harry Potter and the Hunger Games. Also, I love to go to music
+                festivals such as Festival Estereopicnic, Jamming Festival and
+                Rock Al Parque.
+              </p>
+            </div>
+            <div
+              class="col-sm-12 col-lg-6 picture-container"
+              data-aos="fade-right"
+            >
+              <img id="my-pictures" alt="pictures" class="about-me-picture" />
+            </div>
+          </div>
+        </section>
+        <section id="experience">
+          <div class="row justify-content-center section-spacing">
+            <div class="col-sm-12 about-me-container">
+              <h3>Experience</h3>
+            </div>
+            <div class="col-sm-12 display-experience">
+              <div class="media">
+                <img
+                  src="./images/cleverlynk.jpg"
+                  class="mr-3 experience-logo"
+                  alt="Cleverlynk's logo"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Cleverlynk (June 2020 - Present)</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                  nisi vulputate fringilla. Donec lacinia congue felis in
+                  faucibus.
+                </div>
+              </div>
+            </div>
+            <div class="media">
+              <img
+                src="./images/Mo.png"
+                class="mr-3 experience-logo"
+                alt="Mo's logo"
+              />
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">
+                  Mo Technologies (July 2020- Present)
+                </h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                nisi vulputate fringilla. Donec lacinia congue felis in
+                faucibus.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="row"></div>
+        </section>
+        <section id="education">
+          <div class="row section-spacing">
+            <div class="col-sm-12 col-lg-6 about-me-container">
+              <h3>Education</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img
+                src="./images/Uniandes.jpg"
+                alt="Universidad de los Andes"
+                width="10%"
+              />
+              <span><strong> Universidad de los Andes </strong></span>
+              <ul>
+                <li>Systems and Computing Engineering (2015-)</li>
+                <li>Minor in Mathematics(2015-)</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img
+                src="./images/MBS.jpg"
+                alt="Montessori British School"
+                width="10%"
+              />
+              <span><strong>Montessori British School</strong></span>
+              <ul>
+                <li>High School Diploma (2009-2015)</li>
+                <li>Student representative (2014-2015)</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="./images/Coursera.jpg" alt="Coursera" width="10%" />
+              <span><strong>Coursera</strong></span>
+              <ul>
+                <li>Algorithmic Toolbox</li>
+                <li>Front-End Web UI Frameworks and Tools: Bootstrap 4</li>
+                <li>Front-End Web Development with React</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div style="display: inline-block;">
+          <span>You may contact me here:</span>
+          <i class="fa fa-linkedin-in"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-envelope"></i>
+          <i class="fa fa-github"></i>
         </div>
-        <div class="row justify-content-center call-to-action" >
-          <h3>If you want to know me better just scroll!</h3>
-        </div>
-      </main> 
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -84,6 +233,9 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

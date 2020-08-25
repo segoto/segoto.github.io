@@ -4,7 +4,24 @@ const descriptions = [
   "Competitive programmer",
   "Football lover",
 ];
-
+const photosWidths=[
+    60,
+    100,
+    80,
+    80,
+    80,
+    35,
+    44,
+    80,
+    80,
+    80,
+    80,
+    80,
+    80,
+    35,
+    57,
+    80,
+]
 const timeOuts = [0, 1200, 2600, 4000];
 function typeWriterEffect() {
   setTimeout(function () {
@@ -48,11 +65,11 @@ function typeWriterEffect() {
             clearInterval(typeTimer2);
             listItems[i].innerHTML = str2;
             n2 = 0;
-            setInterval(function () {
+            let timer2 = setInterval(function () {
               if (n2 === 0) {
-                if (i === 3) listItems[i].innerHTML = str2 + "|";
-                else listItems[i].innerHTML = str2;
+                listItems[i].innerHTML = str2;
                 n2 = 1;
+                clearInterval(timer2);
               } else {
                 listItems[i].innerHTML = str2;
                 n2 = 0;
@@ -64,10 +81,18 @@ function typeWriterEffect() {
     }
   }, 3675);
 }
-function appearCallToAction(){
-    setTimeout(function(){
-        document.getElementsByClassName('call-to-action')[0].style.display="block";
-    },7500);
+function photoChange() {
+  let i = 0;
+  setInterval(function () {
+    let pic = document
+    .getElementById("my-pictures");
+
+    pic.setAttribute("width", ""+photosWidths[(i % 16)]+"%");
+    pic.setAttribute("src", "./images/" + (i % 16) + ".jpg");
+    
+    ++i;
+  },2000);
 }
-appearCallToAction();
+photoChange();
 typeWriterEffect();
+
