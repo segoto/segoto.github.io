@@ -4,24 +4,24 @@ const descriptions = [
   "Competitive programmer",
   "Soccer lover",
 ];
-const photosWidths=[
-    60,
-    100,
-    80,
-    80,
-    80,
-    35,
-    44,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    35,
-    57,
-    80,
-]
+const photosWidths = [
+  60,
+  100,
+  80,
+  80,
+  80,
+  35,
+  44,
+  80,
+  80,
+  80,
+  80,
+  80,
+  80,
+  35,
+  57,
+  80,
+];
 const timeOuts = [0, 1200, 2600, 4000];
 function typeWriterEffect() {
   setTimeout(function () {
@@ -84,15 +84,13 @@ function typeWriterEffect() {
 function photoChange() {
   let i = 0;
   setInterval(function () {
-    let pic = document
-    .getElementById("my-pictures");
+    let pic = document.getElementById("my-pictures");
 
-    pic.setAttribute("width", ""+photosWidths[(i % 16)]+"%");
+    pic.setAttribute("width", "" + photosWidths[i % 16] + "%");
     pic.setAttribute("src", "./images/" + (i % 16) + ".jpg");
-    
+
     ++i;
-  },2000);
+  }, 2000);
 }
 photoChange();
 typeWriterEffect();
-
